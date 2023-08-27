@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Pathway_Extreme';
+    font-weight: 800;
+    src: local('Pathway Extreme'), url(./fonts/PathwayExtreme-VariableFont_opsz\,wdth\,wght.ttf) format('opentype')
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
