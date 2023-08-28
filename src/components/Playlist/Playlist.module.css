@@ -14,7 +14,7 @@
 
 #playlistInput {
     background-color: transparent;
-    max-width: 100%;
+    width: 100%;
     outline: none;
     border-radius: 0;
     padding: 15px 10px 5px 10px;
@@ -22,9 +22,39 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hr {
     width: 70%;
     border-color: rgba(255, 255, 255, 0.459);
+}
+
+.addToSpotify {
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 0;
+    margin-left: 15px;
+    background-color: rgb(32, 15, 44);
+    font-size: 18px;
+    color: white;
+}
+
+.addToSpotify:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+}
+
+.addToSpotify:active {
+    border: 2px solid black;
+}
+
+.addButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }

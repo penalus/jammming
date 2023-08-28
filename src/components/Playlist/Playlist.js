@@ -8,7 +8,9 @@ function Playlist() {
                 <input type='text' id={styles.playlistInput} placeholder='my playlist'></input>
                 <hr className={styles.hr}/>
             </div>
-            
+            <div className={styles.addButtonWrapper}>
+                <button className={styles.addToSpotify}>Add to spotify</button>
+            </div>            
         </div>
     )
 }

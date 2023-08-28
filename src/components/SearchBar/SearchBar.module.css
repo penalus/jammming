@@ -26,23 +26,22 @@ input[type="text" i]:focus-visible {
 }
 
 .searchButton {
-    width: 50px;
+    width: 90px;
     height: 35px;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 0 0;
     margin-left: 15px;
-    background: url(/src/images/magnify-big.png);
-    background-size: 100%;
-    background-repeat:no-repeat;
+    background-color: rgb(32, 15, 44);
+    font-size: 18px;
+    color: white;
 }
 
 .searchButton:hover {
-    background: url(/src/images/magnify-big-hover.png);
-    background-size: 100%;
-    background-repeat:no-repeat;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     border: 1px solid black;
+    color: black;
 }
 
 .searchButton:active {

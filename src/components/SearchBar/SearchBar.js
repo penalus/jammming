@@ -7,8 +7,8 @@ function SearchBar() {
         <div>
             <div className={styles.searchContainer}>
                 <div className={styles.search}>
-                    <input type='text' id={styles.searchbarInput} placeholder='Search for...'/>
-                    <button className={styles.searchButton}></button>
+                    <input type='text' id={styles.searchbarInput} placeholder='Search your music...'/>
+                    <button className={styles.searchButton}>Search</button>
                 </div>
             </div>
         </div>
