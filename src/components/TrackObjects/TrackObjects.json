@@ -1,0 +1,56 @@
+[
+    {
+        "name": "...Baby One More Time",
+        "artist": "Britney Spears",
+        "album": "...Baby One More Time",
+        "id": 1
+    },
+    {
+        "name": "(You Make Me) Crazy",
+        "artist": "Britney Spears",
+        "album": "...Baby One More Time",
+        "id": 2
+    },
+    {
+        "name": "Sometimes",
+        "artist": "Britney Spears",
+        "album": "...Baby One More Time",
+        "id": 3
+    },
+    {
+      "name": "Stripped Intro",
+      "artist": "Christina Aguilera",
+      "album": "Stripped",
+      "id": 4
+    },
+    {
+      "name": "Can\"t Hold Us Down (featuring Lil\" Kim)",
+      "artist": "Christina Aguilera",
+      "album": "Stripped",
+      "id": 5
+    },
+    {
+      "name": "Walk Away",
+      "artist": "Christina Aguilera",
+      "album": "Stripped",
+      "id": 6
+    },
+    {
+      "name": "If Not for You",
+      "artist": "Bob Dylan",
+      "album": "New Morning",
+      "id": 7
+    },
+    {
+      "name": "Day of the Locusts",
+      "artist": "Bob Dylan",
+      "album": "New Morning",
+      "id": 8
+    },
+    {
+      "name": "Time Passes Slowly",
+      "artist": "Bob Dylan",
+      "album": "New Morning",
+      "id": 9
+    }
+]

@@ -1,6 +1,6 @@
 .wrapper {
     width: 50%;
-    height: 400px;
+    height: 100%;
     border: 1px solid red;
     margin-top: 30px;
     background-image: -webkit-linear-gradient(rgba(128, 0, 128, 0.219), black);
