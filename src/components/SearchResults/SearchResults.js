@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './SearchResults.module.css';
 import Tracklist from '../Tracklist/Tracklist';
 
-function SearchResults() {   
+function SearchResults({ searchResults, onAdd }) {   
      
     return (
         <div className={styles.wrapper}>
@@ -10,7 +10,10 @@ function SearchResults() {
                 <h3 className={styles.h3}>Results</h3>
                 <hr className={styles.hr}/>
             </div>
-            <Tracklist />
+            <Tracklist 
+                tracks={searchResults}
+                onAdd={onAdd}
+                isRemoval={false}/>
         </div>
     )
 }

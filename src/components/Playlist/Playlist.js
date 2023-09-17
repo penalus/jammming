@@ -2,38 +2,21 @@ import React, { useState } from 'react';
 import styles from './Playlist.module.css';
 import Tracklist from '../Tracklist/Tracklist';
 
-function Playlist() {
-    const playlistMockTracks = [
-        {
-            name: "...Baby One More Time",
-            artist: "Britney Spears",
-            album: "...Baby One More Time",
-            id: 1
-        },
-        {
-            name: "(You Make Me) Crazy",
-            artist: "Britney Spears",
-            album: "...Baby One More Time",
-            id: 2
-        },
-        {
-            name: "Sometimes",
-            artist: "Britney Spears",
-            album: "...Baby One More Time",
-            id: 3
-        }
-
-    ]
+function Playlist({ playlistTracks, onRemove, onNameChange }) {
+    // Placeholder functionality
     let mockString = 'playlist mock name';
     const [placeholder, setPlaceholder] = useState(mockString);
-    const [playlistName, setPlaylistName] = useState('');
-    const [playlistTracks, setPlaylistTracks] = useState(playlistMockTracks);
 
     function clearPlaceholder(event){
         setPlaceholder(event.target.placeholder = "");
     }
     function addPlaceholderAgain(event) {
         setPlaceholder(event.target.placeholder = mockString);
+    }
+
+    // Playlistname event handler
+    const handleNameChange = event => {
+        onNameChange(event.target.value);
     }
     return (
         <div className={styles.wrapper}>
@@ -43,12 +26,18 @@ function Playlist() {
                     className={styles.playlistInput} 
                     placeholder={mockString} 
                     onFocus={clearPlaceholder}  
-                    onBlur={addPlaceholderAgain}             />
+                    onBlur={addPlaceholderAgain} 
+                    onChange={handleNameChange}           
+                />
                 <hr className={styles.hr}/>
             </div>
-            
+            <Tracklist 
+                tracks={playlistTracks}
+                isRemoval={true}
+                onRemove={onRemove}
+                />
             <div className={styles.addButtonWrapper}>
-                <button className={styles.addToSpotify}>Add to spotify</button>
+                <button className={styles.addToSpotify}>Save to spotify</button>
             </div>            
         </div>
     )
